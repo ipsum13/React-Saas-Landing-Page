@@ -2,6 +2,7 @@ import React, { Fragment, useRef, useCallback, useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import logo from './images/logo.png';
 import {
   AppBar,
   Toolbar,
@@ -228,22 +229,7 @@ function NavBar(props) {
               </Box>
             </Hidden>
             <Hidden xsDown>
-              <Typography
-                variant="h4"
-                className={classes.brandText}
-                display="inline"
-                color="primary"
-              >
-                Wa
-              </Typography>
-              <Typography
-                variant="h4"
-                className={classes.brandText}
-                display="inline"
-                color="secondary"
-              >
-                Ver
-              </Typography>
+            <img src={logo} alt="logo" style={{width: '70px', height: 'auto'}} />
             </Hidden>
           </Box>
           <Box
