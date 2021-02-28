@@ -1,0 +1,111 @@
+/*****
+  Companies
+  *****/
+  .companies {
+    padding: 150px 0;
+  }
+
+ .companies h1 {
+    font-size: 38px;
+    font-weight: 500;
+    display: table;
+    margin: 0 auto;
+    width: 550px;
+    margin-bottom: 50px;
+   
+  }
+
+
+ .companies .img-lg {
+    max-height: 375px;
+    max-width: 1050px;
+    height: 100%;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+  }
+
+ .companies .img-sm {
+    display: none;
+  }
+
+  @media (max-width: 300px) {
+   .companies {
+      padding: 80px 0;
+    }
+
+    .companies h1 {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0 auto 12px auto;
+      width: 200px;
+    }
+
+   .companies .img-lg {
+      display: none;
+    }
+
+    .companies .img-sm {
+      display: block;
+      max-height: 375px;
+      max-width: 200px;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 301px) and (max-width: 600px) {
+   .companies {
+      padding: 100px 0;
+    }
+
+    .companies h1 {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0 auto 12px auto;
+      width: 250px;
+    }
+
+   .companies .img-lg {
+      display: none;
+    }
+
+    .companies .img-sm {
+      display: block;
+      max-height: 470px;
+      max-width: 250px;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .companies {
+      padding: 140px 0;
+    }
+
+    .companies h1 {
+      font-size: 38px;
+      font-weight: 500;
+      margin: 0 auto 30px auto;
+      width: 550px;
+    }
+
+    .companies .img-lg {
+      max-height: 190px;
+      max-width: 525px;
+    }
+  }
+  
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .companies {
+      padding: 120px 0;
+    }
+
+    .companies .img-lg {
+      max-height: 300px;
+      max-width: 850px;
+    }
+  }

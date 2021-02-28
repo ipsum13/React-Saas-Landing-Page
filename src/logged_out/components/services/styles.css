@@ -1,0 +1,32 @@
+#services {
+    margin-top: 10vw;
+}
+.services-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.text-center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .services-box {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1024px){ 
+    .services-box {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){ 
+    .services-box {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    } 
+} 
+
