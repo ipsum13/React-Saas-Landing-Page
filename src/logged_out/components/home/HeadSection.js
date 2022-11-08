@@ -174,7 +174,7 @@ function HeadSection(props) {
                           size={isWidthUp("sm", width) ? "large" : "medium"}
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="tel:+34666666666"
+                          href="https://wa.me/34666689007?text=Hola,%20me%20interesan%20vuestros%20servicios%20de%20transporte%20y%20mudanzas."
                         >
                           Contactar
                         </Button>
