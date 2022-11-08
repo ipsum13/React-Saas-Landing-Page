@@ -15,6 +15,7 @@ import {
 import WaveBorder from "../../../shared/components/WaveBorder";
 import ZoomImage from "../../../shared/components/ZoomImage";
 import landingImage from "./images/landing.gif";
+import logoImage from "./images/logo_naranja.png";
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -104,17 +105,48 @@ function HeadSection(props) {
   const { classes, theme, width } = props;
   return (
     <Fragment>
+      <div style={{ backgroundColor: "#000428", display: "flex" }}>
+        {/*Create a text next to logo saying "ZARINA TRANSPORTES" */}
+        <Typography
+          variant="h4"
+          align="center"
+          style={{ color: "#fff", marginTop: "2vh", margin: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}
+          className={classes.h4}
+        >
+          ZARINA TRANSPORTES
+        </Typography>
+        <ZoomImage
+          src={logoImage}
+          alt="logo"
+          style={{ margin: "10px", display: "flex", justifyContent: "end", alignItems: "end" }}
+          className={classes.image}
+        />
+
+
+
+      </div>
+
+
+
       <div className={classNames("lg-p-top", classes.wrapper)}>
+
         <div className={classNames("container-fluid", classes.container)}>
+
           <Box display="flex" justifyContent="center" className="row">
+
             <Card
               className={classes.card}
               data-aos-delay="200"
               data-aos="zoom-in"
             >
+
               <div className={classNames(classes.containerFix, "container")}>
+                {/*logi image centered horizontally*/}
+
+
                 <Box justifyContent="space-between" className="row">
                   <Grid item xs={12} md={5}>
+
                     <Box
                       display="flex"
                       flexDirection="column"
@@ -123,33 +155,48 @@ function HeadSection(props) {
                     >
                       <Box mb={4}>
                         <Typography
+                          variant={isWidthUp("lg", width) ? "h2" : "h3"}
+                        >
+                          Mudanzas en toda Europa
+                        </Typography>
+                        <Typography
                           variant={isWidthUp("lg", width) ? "h3" : "h4"}
                         >
-                          App, Business, Product & Saas Landing Page built with
-                          React
+                          ·Locales - <b>Barcelona y alrededores</b> {"\n"}<br />
+                          ·Mudanzas en toda Cataluña y España
                         </Typography>
                       </Box>
                       <div>
+                        {/*Phone number link*/}
                         <Button
                           variant="contained"
-                          color="secondary"
-                          fullWidth
+                          color="primary"
+                          size={isWidthUp("sm", width) ? "large" : "medium"}
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/ipsum13/React-Saas-Landing-Page"
+                          href="tel:+34666666666"
                         >
-                          Download from GitHub
+                          Contactar
                         </Button>
                       </div>
                     </Box>
                   </Grid>
                   <Hidden smDown>
-                    <Grid item md={6}>
-                      <ZoomImage
-                        src={landingImage}
-                        className={classes.image}
-                        alt="header example"
-                      />
+                    {/*Vertically centered langingImage */}
+                    <Grid item md={7}>
+                      <Box
+
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        height="100%"
+                      >
+                        <ZoomImage
+                          src={landingImage}
+                          alt="landing"
+                          className={classes.image}
+                        />
+                      </Box>
                     </Grid>
                   </Hidden>
                 </Box>

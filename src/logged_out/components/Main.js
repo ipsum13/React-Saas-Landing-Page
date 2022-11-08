@@ -8,13 +8,10 @@ import "aos/dist/aos.css";
 import CookieRulesDialog from "./cookies/CookieRulesDialog";
 import CookieConsent from "./cookies/CookieConsent";
 import dummyBlogPosts from "../dummy_data/blogPosts";
-import DialogSelector from "./register_login/DialogSelector";
 import Routing from "./Routing";
 import smoothScrollTop from "../../shared/functions/smoothScrollTop";
 import Data from '../data/data.json';
 import Testimonials from './testimonials/Testimonials';
-import Team from './team/Team';
-import Companies from './companies/Companies';
 import Services from './services/Services';
 import PricingSection from './home/PricingSection';
 
@@ -39,7 +36,7 @@ function Main(props) {
   const selectHome = useCallback(() => {
     smoothScrollTop();
     document.title =
-      "WaVer - Free template for building a SaaS or admin application";
+      "ZARINA TRANSPORTES - Transportes y mudan";
     setSelectedTab("Home");
   }, [setSelectedTab]);
 
@@ -48,11 +45,6 @@ function Main(props) {
     document.title = "WaVer - Blog";
     setSelectedTab("Blog");
   }, [setSelectedTab]);
-
-  const openLoginDialog = useCallback(() => {
-    setDialogOpen("login");
-    setIsMobileDrawerOpen(false);
-  }, [setDialogOpen, setIsMobileDrawerOpen]);
 
   const closeDialog = useCallback(() => {
     setDialogOpen(null);
@@ -117,36 +109,17 @@ function Main(props) {
           handleCookieRulesDialogOpen={handleCookieRulesDialogOpen}
         />
       )}
-      <DialogSelector
-        openLoginDialog={openLoginDialog}
-        dialogOpen={dialogOpen}
-        onClose={closeDialog}
-        openTermsDialog={openTermsDialog}
-        openRegisterDialog={openRegisterDialog}
-        openChangePasswordDialog={openChangePasswordDialog}
-      />
-      <CookieRulesDialog
+       <CookieRulesDialog
         open={isCookieRulesDialogOpen}
         onClose={handleCookieRulesDialogClose}
       />
-      <NavBar
-        selectedTab={selectedTab}
-        selectTab={setSelectedTab}
-        openLoginDialog={openLoginDialog}
-        openRegisterDialog={openRegisterDialog}
-        mobileDrawerOpen={isMobileDrawerOpen}
-        handleMobileDrawerOpen={handleMobileDrawerOpen}
-        handleMobileDrawerClose={handleMobileDrawerClose}
-      />
-      <Routing
+       <Routing
         blogPosts={blogPosts}
         selectHome={selectHome}
         selectBlog={selectBlog}
       />
       <Services data={landingPageData.Services} />
       <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Companies />
       <PricingSection />
       <Footer />
     </div>

@@ -7,10 +7,9 @@ export class Services extends Component {
       <div id="services" className="text-center">
         <div className="container">
           <div className="section-title">
-            <h2>Our Services</h2>
+            <h2>NUESTROS SERVICIOS</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-              dapibus leonec.
+            Brindamos cobertura de mudanzas en toda Barcelona y alrededores con un servicio eficiente y personalizado, consulta nuestros precios y notarás la diferencia.
             </p>
           </div>
           <div className="services-box">

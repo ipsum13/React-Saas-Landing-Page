@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import { Switch } from "react-router-dom";
 import PropsRoute from "../../shared/components/PropsRoute";
 import Home from "./home/Home";
-import Blog from "./blog/Blog";
-import BlogPost from "./blog/BlogPost";
 
 function Routing(props) {
   const { blogPosts, selectBlog, selectHome } = props;
@@ -13,7 +11,7 @@ function Routing(props) {
       {blogPosts.map((post) => (
         <PropsRoute
           path={post.url}
-          component={BlogPost}
+          component={Home}
           title={post.title}
           key={post.title}
           src={post.src}
@@ -27,7 +25,7 @@ function Routing(props) {
       <PropsRoute
         exact
         path="/blog"
-        component={Blog}
+        component={Home}
         selectBlog={selectBlog}
         blogPosts={blogPosts}
       />

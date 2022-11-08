@@ -9,15 +9,6 @@ const styles = (theme) => ({
     zIndex: theme.zIndex.modal,
     backgroundColor: "rgba(0, 0, 0, 0.8)",
   },
-  portalImgWrapper: {
-    position: "fixed",
-    top: "0",
-    left: "0",
-    width: "100%",
-    height: "100%",
-    zIndex: theme.zIndex.modal,
-    cursor: "pointer",
-  },
   portalImgInnerWrapper: {
     display: "flex",
     justifyContent: "center",
@@ -52,19 +43,6 @@ function ZoomImage(props) {
     setZoomedIn(false);
   }, [setZoomedIn]);
 
-  useEffect(() => {
-    if (zoomedIn) {
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollbarSize}px`;
-      document.querySelector(
-        "header"
-      ).style.paddingRight = `${scrollbarSize}px`;
-    } else {
-      document.body.style.overflow = "auto";
-      document.body.style.paddingRight = "0px";
-      document.querySelector("header").style.paddingRight = "0px";
-    }
-  }, [zoomedIn, scrollbarSize]);
 
   return (
     <Fragment>
