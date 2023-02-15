@@ -50,7 +50,7 @@ function PricingSection(props) {
   return (
     <div className="lg-p-top" style={{ background: "linear-gradient(to right, #ffb347, #ffcc33)", paddingBottom: "10vw" }}>
       <Typography variant="h3" align="center" className="lg-mg-bottom section-title">
-        Pricing
+        Precio
       </Typography>
       <div className={classNames("container-fluid", classes.containerFix)}>
         <Grid
@@ -58,31 +58,13 @@ function PricingSection(props) {
           spacing={calculateSpacing(width)}
           className={classes.gridContainer}
         >
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            lg={3}
-            className={classes.cardWrapper}
-            data-aos="zoom-in-up"
-          >
-            <PriceCard
-              title="Starter"
-              pricing={
-                <span>
-                  $14.99
-                  <Typography display="inline"> / month</Typography>
-                </span>
-              }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
-            />
-          </Grid>
+        
           <Grid
             item
             className={classes.cardWrapperHighlighted}
-            xs={12}
-            sm={6}
-            lg={3}
+            xs={16}
+            sm={12}
+            lg={12}
             data-aos="zoom-in-up"
             data-aos-delay="200"
           >
@@ -91,53 +73,14 @@ function PricingSection(props) {
               title="Premium"
               pricing={
                 <span>
-                  $29.99
-                  <Typography display="inline"> / month</Typography>
+                  25.00€
+                  <Typography display="inline"> / hora</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["Servicio de transporte, precio fijo por hora.", "Transportista ayuda con la mudanza.", "Incluye carro para cargas pesadas."]}
             />
           </Grid>
-          <Grid
-            item
-            className={classes.cardWrapper}
-            xs={12}
-            sm={6}
-            lg={3}
-            data-aos="zoom-in-up"
-            data-aos-delay={isWidthUp("md", width) ? "400" : "0"}
-          >
-            <PriceCard
-              title="Business"
-              pricing={
-                <span>
-                  $49.99
-                  <Typography display="inline"> / month</Typography>
-                </span>
-              }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
-            />
-          </Grid>
-          <Grid
-            item
-            className={classes.cardWrapper}
-            xs={12}
-            sm={6}
-            lg={3}
-            data-aos="zoom-in-up"
-            data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
-          >
-            <PriceCard
-              title="Tycoon"
-              pricing={
-                <span>
-                  $99.99
-                  <Typography display="inline"> / month</Typography>
-                </span>
-              }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
-            />
-          </Grid>
+        
         </Grid>
       </div>
     </div>

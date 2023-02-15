@@ -33,8 +33,8 @@ const styles = theme => ({
 function PriceCard(props) {
   const { classes, theme, title, pricing, features, highlighted } = props;
   return (
-    <div className={highlighted ? classes.cardHightlighted : classes.card}>
-      <Box mb={2}>
+    <div style={{"paddingBottom": "-135px"}} className={highlighted ? classes.cardHightlighted : classes.card}>
+      <Box mb={2} style={{"marginTop": "-0px"}}>
         <Typography
           variant={highlighted ? "h5" : "h6"}
           className={highlighted ? "text-white" : classes.title}
@@ -51,12 +51,13 @@ function PriceCard(props) {
         </Typography>
       </Box>
       {features.map((feature, index) => (
-        <Box display="flex" alignItems="center" mb={1} key={index}>
+        <Box display="flex" alignItems="center" justifyContent="center" mb={1} key={index}>
           <CheckIcon
             style={{
               color: highlighted
                 ? theme.palette.common.white
-                : theme.palette.primary.dark
+                : theme.palette.primary.dark,
+                "marginBottom": "25px"
             }}
           />
           <Box ml={1}>

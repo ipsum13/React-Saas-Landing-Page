@@ -38,97 +38,56 @@ function CookieRulesDialog(props) {
       <DialogTitle>Our Cookie Policy</DialogTitle>
       <DialogContent>
         <Typography variant="h6" color="primary" paragraph>
-          What Are Cookies
+          Qué son las Cookies
         </Typography>
         <Typography paragraph>
-          As is common practice with almost all professional websites this site
-          uses cookies, which are tiny files that are downloaded to your
-          computer, to improve your experience. This page describes what
-          information they gather, how we use it and why we sometimes need to
-          store these cookies. We will also share how you can prevent these
-          cookies from being stored however this may downgrade or
-          &apos;break&apos; certain elements of the sites functionality. For
-          more general information on cookies see the Wikipedia article on HTTP
-          Cookies.
+          
+          Como es práctica común con casi todos los sitios web profesionales,
+          este sitio utiliza cookies, que son archivos pequeños que se
+          descargan en su ordenador, para mejorar su experiencia. Esta página
+          describe qué información recogen, cómo la usamos y por qué a veces
+          necesitamos almacenar estas cookies. También compartiremos cómo puede
+          evitar que estas cookies se almacenen, sin embargo, esto puede
+          desactivar o &apos;romper&apos; ciertos elementos de la funcionalidad
+          del sitio. Para obtener más información general sobre las cookies, consulte el artículo de Wikipedia sobre HTTP Cookies.
         </Typography>
         <Typography variant="h6" color="primary" paragraph>
-          How We Use Cookies
+          Cómo usamos las cookies
         </Typography>
         <Typography paragraph>
-          We use cookies for a variety of reasons detailed below. Unfortunately
-          in most cases there are no industry standard options for disabling
-          cookies without completely disabling the functionality and features
-          they add to this site. It is recommended that you leave on all cookies
-          if you are not sure whether you need them or not in case they are used
-          to provide a service that you use.
+          Usamos cookies por una variedad de razones detalladas a continuación.
+          Desafortunadamente, en la mayoría de los casos no hay opciones
+          estándar de la industria para deshabilitar las cookies sin
+          deshabilitar completamente la funcionalidad y las características que
+          añaden a este sitio. Se recomienda que deje todas las cookies si no
+          está seguro de si necesita o no, ya que pueden ser utilizadas para
+          proporcionar un servicio que utiliza.
         </Typography>
         <Typography variant="h6" color="primary" paragraph>
-          Disabling Cookies
+          Deshabilitando cookies
         </Typography>
         <Typography paragraph>
-          You can prevent the setting of cookies by adjusting the settings on
-          your browser (see your browser Help for how to do this). Be aware that
-          disabling cookies will affect the functionality of this and many other
-          websites that you visit. Disabling cookies will usually result in also
-          disabling certain functionality and features of the this site.
-          Therefore it is recommended that you do not disable cookies.
+          Puede evitar la configuración de cookies ajustando la configuración de
+          su navegador (consulte la Ayuda de su navegador para saber cómo hacer
+          esto). Tenga en cuenta que la desactivación de cookies afectará la
+          funcionalidad de este y muchos otros sitios web que visita. La
+          desactivación de cookies generalmente también desactivará cierta
+          funcionalidad y características de este sitio. Por lo tanto, se
+          recomienda que no desactive las cookies.
         </Typography>
         <Typography variant="h6" color="primary" paragraph>
-          The Cookies We Set
+          Las cookies que establecemos
         </Typography>
-        <Typography paragraph>Account related cookies:</Typography>
+        <Typography paragraph>Cookies relacionadas a la cuenta:</Typography>
         <Typography paragraph>
-          If you create an account with us then we will use cookies for the
-          management of the signup process and general administration. These
-          cookies will usually be deleted when you log out however in some cases
-          they may remain afterwards to remember your site preferences when
-          logged out. We use cookies to remember that you accepted this message.
+          Si crea una cuenta con nosotros, usaremos cookies para el manejo del
+          proceso de registro y la administración general. Estas cookies
+          generalmente se eliminarán cuando cierre sesión, pero en algunos casos
+          pueden permanecer después para recordar sus preferencias de sitio
+          cuando cierre sesión. Usamos cookies para recordar que aceptó este
+          mensaje.
         </Typography>
-        <Typography paragraph>Login related cookies:</Typography>
-        <Typography paragraph>
-          We use cookies when you are logged in so that we can remember this
-          fact. This prevents you from having to log in every single time you
-          visit a new page. These cookies are typically removed or cleared when
-          you log out to ensure that you can only access restricted features and
-          areas when logged in.
-        </Typography>
-        <Typography paragraph>Site preferences cookies:</Typography>
-        <Typography paragraph>
-          In order to provide you with a great experience on this site we
-          provide the functionality to set your preferences for how this site
-          runs when you use it. In order to remember your preferences we need to
-          set cookies so that this information can be called whenever you
-          interact with a page is affected by your preferences.
-        </Typography>
-        <Typography variant="h6" color="primary" paragraph>
-          Third Party Cookies:
-        </Typography>
-        <Typography paragraph>
-          In some special cases we also use cookies provided by trusted third
-          parties. The following section details which third party cookies you
-          might encounter through this site.
-        </Typography>
-        <Typography paragraph>
-          Third party analytics are used to track and measure usage of this site
-          so that we can continue to produce engaging content. These cookies may
-          track things such as how long you spend on the site or pages you visit
-          which helps us to understand how we can improve the site for you.
-        </Typography>
-        <Typography variant="h6" color="primary" paragraph>
-          More Information
-        </Typography>
-        <Typography paragraph>
-          Hopefully that has clarified things for you and as was previously
-          mentioned if there is something that you aren&apos;t sure whether you
-          need or not it&apos;s usually safer to leave cookies enabled in case
-          it does interact with one of the features you use on our site. This
-          Cookies Policy was created with the help of the Cookies Policy
-          Template Generator and the Terms and Conditions Template.
-        </Typography>
-        <Typography paragraph>
-          However if you are still looking for more information then you can
-          contact us by sending an email to tim.v.kaenel@gmail.com.
-        </Typography>
+  
       </DialogContent>
       <DialogActions className={classes.dialogActions}>
         <ColoredButton
@@ -136,8 +95,7 @@ function CookieRulesDialog(props) {
           variant="contained"
           color={theme.palette.common.black}
         >
-          <ArrowBackIcon className={classes.backIcon} />
-          Back
+          Atrás
         </ColoredButton>
       </DialogActions>
     </Dialog>
